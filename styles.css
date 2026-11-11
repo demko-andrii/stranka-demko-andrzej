@@ -167,95 +167,10 @@ a:focus-visible {
   overflow: hidden;
   display: grid;
   place-items: center;
-  isolation: isolate;
   background:
-    linear-gradient(180deg, rgba(15, 12, 10, 0.45), rgba(15, 12, 10, 0.28) 40%, rgba(15, 12, 10, 0.78) 100%),
-    radial-gradient(ellipse at 50% 35%, rgba(117, 78, 42, 0.25), transparent 49%),
-    linear-gradient(105deg, #201913, #39291d 47%, #211813);
-}
-
-.hero-backdrop,
-.hero-backdrop::before,
-.hero-backdrop::after {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-}
-
-.hero-backdrop {
-  overflow: hidden;
-  background:
-    linear-gradient(90deg, transparent 10%, rgba(13, 11, 9, 0.45) 50%, transparent 90%),
-    repeating-linear-gradient(90deg, transparent 0 8%, rgba(16, 13, 11, 0.22) 8.2% 8.5%, transparent 8.8% 17%);
-}
-
-.hero-backdrop::before {
-  content: "";
-  inset: 24% 0 18%;
-  background:
-    linear-gradient(180deg, transparent 0 12%, rgba(12, 10, 8, 0.86) 13% 17%, transparent 18% 68%, rgba(12, 10, 8, 0.84) 69% 74%, transparent 75%),
-    radial-gradient(ellipse at 18% 10%, rgba(216, 182, 106, 0.16), transparent 12%),
-    radial-gradient(ellipse at 80% 8%, rgba(216, 182, 106, 0.13), transparent 12%);
-}
-
-.hero-backdrop::after {
-  content: "";
-  top: auto;
-  height: 24%;
-  background:
-    linear-gradient(180deg, rgba(15, 12, 10, 0.92), rgba(52, 33, 22, 0.92) 18%, rgba(91, 56, 32, 0.68) 21%, rgba(27, 19, 14, 0.98) 24%, rgba(42, 29, 20, 0.92) 65%, #17120f 100%),
-    repeating-linear-gradient(3deg, rgba(212, 157, 90, 0.11) 0 1px, transparent 1px 14px);
-}
-
-.glow {
-  position: absolute;
-  top: 10%;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: rgba(239, 195, 115, 0.58);
-  box-shadow: 0 0 28px 17px rgba(239, 195, 115, 0.12);
-}
-
-.glow-one {
-  left: 30%;
-}
-
-.glow-two {
-  right: 27%;
-  top: 14%;
-  width: 13px;
-  height: 13px;
-}
-
-.shelf {
-  position: absolute;
-  left: 8%;
-  right: 8%;
-  height: 1px;
-  background: rgba(201, 140, 72, 0.38);
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.75);
-}
-
-.shelf-one {
-  top: 38%;
-}
-
-.shelf-two {
-  top: 63%;
-  left: 14%;
-  right: 14%;
-}
-
-.counter {
-  position: absolute;
-  right: 0;
-  bottom: 23%;
-  left: 0;
-  height: 2px;
-  background: rgba(203, 151, 92, 0.55);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+    linear-gradient(180deg, rgba(15, 12, 10, 0.46), rgba(15, 12, 10, 0.38) 42%, rgba(15, 12, 10, 0.7) 100%),
+    linear-gradient(90deg, rgba(15, 12, 10, 0.24), rgba(15, 12, 10, 0.08) 50%, rgba(15, 12, 10, 0.24)),
+    url("img/cafe-interior.jpg") center 68% / cover no-repeat;
 }
 
 .hero-content {
