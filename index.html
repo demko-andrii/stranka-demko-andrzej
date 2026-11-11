@@ -3,33 +3,82 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moje portfólio — začiatok</title>
-  <!-- Vzhľad stránky je v samostatnom súbore styles.css (vrstva CSS) -->
+  <meta name="theme-color" content="#17120f">
+  <title>U Josefa — Rodinná tradícia od roku 1979</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#domov" aria-label="U Josefa — Domov">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M7 18c5-1 9-5 10-12-5 1-9 5-10 12Z" />
+            <path d="M6 20c2-4 5-7 9-10" />
+          </svg>
+        </span>
+        <span class="brand-name">U.<span>JOSEFA</span></span>
+      </a>
 
-  <main class="uvitanie">
-    <div class="emoji">👋</div>
-    <h1>Tu vznikne moje portfólio</h1>
-    <p class="podtext">
-      Toto je štartová stránka kurzu <strong>Tvorba webstránok</strong>.
-      Odteraz ju budeš meniť ty — s pomocou AI asistenta.
-    </p>
+      <button class="menu-toggle" type="button" aria-label="Otvoriť navigáciu" aria-controls="primary-navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
 
-    <div class="karta">
-      <p class="karta-nadpis">Ako začať:</p>
-      <ol>
-        <li>Otvor <strong>Copilot Chat</strong> (ikona Copilota vpravo) — sem píšeš, čo chceš vytvoriť.</li>
-        <li>Tento súbor <code>index.html</code> si pozri v <strong>živom náhľade</strong>: pravý klik naň → <em>Show Preview</em>.</li>
-        <li>Choď na <strong>Blok 7</strong> kurzu a postupuj podľa neho.</li>
-      </ol>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Hlavná navigácia">
+        <a class="active" href="#domov" aria-current="page">Domov</a>
+        <a href="#menu">Menu</a>
+        <a href="#o-nas">O nás</a>
+        <a href="#rezervacie">Rezervácie</a>
+        <a href="#hodnotenia">Hodnotenia</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="language-button" type="button" aria-label="Jazyk: slovenčina">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="8.5" />
+            <path d="M3.8 12h16.4M12 3.5c2.1 2.3 3.1 5.1 3.1 8.5S14.1 18.2 12 20.5C9.9 18.2 8.9 15.4 8.9 12S9.9 5.8 12 3.5Z" />
+          </svg>
+          <span>SK</span>
+        </button>
+        <button class="cart-button" type="button" aria-label="Košík">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L21 8H6" />
+            <circle cx="9.5" cy="19" r="1" />
+            <circle cx="17.5" cy="19" r="1" />
+          </svg>
+        </button>
+      </div>
     </div>
+  </header>
 
-    <p class="poznamka">
-      Keď spravíš prvú zmenu, tento text pokojne zmaž — je len na úvod.
-    </p>
+  <main>
+    <section class="hero" id="domov" aria-labelledby="hero-title">
+      <div class="hero-backdrop" aria-hidden="true">
+        <span class="glow glow-one"></span>
+        <span class="glow glow-two"></span>
+        <span class="shelf shelf-one"></span>
+        <span class="shelf shelf-two"></span>
+        <span class="counter"></span>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Rodinná kaviareň <span aria-hidden="true">•</span> Boryslav</p>
+        <h1 id="hero-title">Rodinná tradícia <span>od roku 1979</span></h1>
+        <p class="hero-description">
+          Spojenie miestnej histórie a moderného pohodlia v Boryslave.
+          Vstúpte do sveta legendárneho podniku, ktorý dýcha dušou.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-outline" href="#rezervacie">Rezervovať stôl</a>
+          <a class="button button-gold" href="#menu">Pozrieť menu</a>
+        </div>
+      </div>
+      <a class="discover-link" href="#menu">
+        <span>Objaviť</span>
+        <span class="discover-line" aria-hidden="true"></span>
+      </a>
+    </section>
   </main>
-
 </body>
 </html>
